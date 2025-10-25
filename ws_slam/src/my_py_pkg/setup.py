@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'number_publisher = my_py_pkg.number_publisher:main',
             'number_counter = my_py_pkg.number_counter:main',
+            'draw_letter = my_py_pkg.draw_letter:main',
         ],
     },
 )
