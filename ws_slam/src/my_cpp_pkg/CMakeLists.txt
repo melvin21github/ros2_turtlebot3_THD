@@ -14,9 +14,13 @@ find_package(std_msgs REQUIRED) #we add a dependency for the msg type.
 add_executable(number_publisher src/number_publisher.cpp)
 ament_target_dependencies(number_publisher rclcpp std_msgs)
 
+add_executable(number_counter src/number_counter.cpp)
+ament_target_dependencies(number_counter rclcpp std_msgs)
+
 #This installs the binary or the executable in your package’s install/lib/my_cpp_pkg/ folder so ros2 run can find it.
 install(TARGETS
   number_publisher
+  number_counter
   DESTINATION lib/${PROJECT_NAME})
 
 
